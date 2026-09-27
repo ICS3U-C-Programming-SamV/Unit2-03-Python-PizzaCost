@@ -1,1 +1,1 @@
-# Unit2-03-Python-PizzaCost
+[![Ms Raffin's Super Linter](https://github.com/ICS3U-C-Programming-SamV/Unit2-03-Python-PizzaCost/workflows/Ms%20Raffin's%20Super%20Linter/badge.svg)](https://github.com/ICS3U-C-Programming-SamV/Unit2-03-Python-PizzaCost/actions/)
