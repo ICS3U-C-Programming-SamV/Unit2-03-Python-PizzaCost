@@ -5,6 +5,10 @@ name: Ms Raffin's Super Linter
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+  statuses: write
+
 jobs:
   run-linters:
     name: Ms Raffin's Super Linter
@@ -12,19 +16,21 @@ jobs:
     steps:
       - name: Check out Git repository 🚦
         uses: actions/checkout@v4
-        
+        with:
+          fetch-depth: 0 # Essential for Super-Linter to parse changed files correctly
+
       - name: Run GitHub Super Linter 🚀
         uses: super-linter/super-linter@v7
         env:
           VALIDATE_ALL_CODEBASE: true
-          LINTER_RULES_PATH: .github/linters
+          # Fix: Change path from '/' to '.' to scan local workspace root, or omit if using defaults
+          LINTER_RULES_PATH: .
           VALIDATE_CLANG_FORMAT: false
           VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_GOOGLE_JAVA_FORMAT: false
-          VALIDATE_PYTHON_FLAKE8: false
-          VALIDATE_GITLEAKS: false # for secrets detection
+          VALIDATE_PYTHON_FLAKE8: true # Set to true to actively catch Python styling issues
+          VALIDATE_GITLEAKS: false
           VALIDATE_JSON: false
-          VALIDATE_JSCPD: false # for copy and paste detection
+          VALIDATE_JSCPD: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
