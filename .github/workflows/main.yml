@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Essential for Super-Linter to parse changed files correctly
-
+       VALIDATE=true
       - name: Run GitHub Super Linter 🚀
         uses: super-linter/super-linter@v7
         env:
