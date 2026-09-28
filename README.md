@@ -1,2 +1,2 @@
 # Intro-Unit2-03-Python-PizzaCost
-[![Ms Raffin's Super Linter](https://github.com/[![Ms Raffin's Super Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Ms%20Raffin's%20Super%20Linter/badge.svg)](https://github.com/<OWNER>/<REPOSITORY>/actions/)/workflows/Ms%20Raffin's%20Super%20Linter/badge.svg)](https://github.com/[![Ms Raffin's Super Linter](https://github.com/<OWNER>/<REPOSITORY>/workflows/Ms%20Raffin's%20Super%20Linter/badge.svg)](https://github.com/<OWNER>/<REPOSITORY>/actions/)/actions/)
+[![Ms Raffin's Super Linter](https://github.com/ICS3U-C-Programming-SamV/Unit2-03-Python-PizzaCost/workflows/Ms%20Raffin's%20Super%20Linter/badge.svg)](https://github.com/ICS3U-C-Programming-SamV/Unit2-03-Python-PizzaCost/actions/)
